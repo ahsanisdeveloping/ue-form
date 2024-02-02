@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="style.css" />
+    <title>UE-Form</title>
+  </head>
+  <body>
+    <div id="submit-div">
+      <h1>Submission Successful</h1>
+      <button id="submit-div-button" onclick="hideDiv()">Proceed</button>
+    </div>
+    <div id="main">
+    <div id="left">
+      <div>
+        <img id="logo" src="ue-logo.png" alt="University of Education" />
+        <p id="p1">Account Registration</p>
+        <p id="p2">Contact:</p>
+        <span id="s1"> admission@ue.edu.pk</span>
+      </div>
+    </div>
+    <div id="right">
+      <div id="form">
+        <h1 id="sign-up">Sign Up</h1>
+        <span id="sign-span">The University of Education - Admission Portal</span>
+        <br>
+        <br>
+        <div class="full-width-div">
+          <label id="fn-label">Full Name:</label><span class="red"> *</span>
+          <span id="fName-error" class="errors"></span>
+          <div>
+            <input id="fName" type="text" />
+          </div>
+        </div>
+        <div class="full-width-div">
+          <label>Email:</label><span class="red"> *</span>
+          <span id="email-error" class="errors"></span>
+          <div>
+            <input id="email" type="email" />
+          </div>
+        </div>
+        <div id="num-main-div">
+          <div id="num-div-1">
+            <label>Mobile:</label><span class="red"> *</span>
+            <span id="mobile-error" class="errors"></span>
+            <div>
+              <input id="mobile" type="number" />
+            </div>
+          </div>
+          <div id="num-div-2" style="position: relative;">
+            <label style="margin-left:0px;">CNIC: [without dashes]</label><span class="red"> *</span>
+            <span id="cnic-error" class="errors"></span>
+            <div>
+              <input id="cnic" type="number" />
+            </div>
+          </div>
+        </div>
+        <div class="full-width-div">
+          <label>Password: [Password must be minimum of 8 characters.]</label
+          ><span class="red"> *</span>
+          <div>
+            <input id="password" type="password" />
+          </div>
+        </div>
+        
+        <span id="password-error" class="errors"></span>
+        <div class="full-width-div">
+          <label>Confirm Password:</label><span class="red"> *</span>
+          <div>
+            <input id="cPassword" type="password" />
+          </div>
+        </div>
+        <div id="check-div">
+          <input id="checkbox"  type="checkbox" /><span class="terms"> I agree to terms & conditions:</span
+          ><a href="#" id="link1" class="terms">click here to download</a>
+          <span class="errors" id="check-error"></span>
+        </div>
+        <div><button id="reg-button" onclick="validate()">Register</button></div>
+        <div><span class="login-s">If you already register please</span><a class="login-a"> Login here</a></div>
+      </div>
+    </div>
+  </div>
+    <script src="script.js"></script>
+  </body>
+</html>
